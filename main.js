@@ -2,10 +2,20 @@ angular.module("App", [])
 .controller("SortCtrl", function($scope) {
   $scope.users = [
     {
-      name: "Mark Howard"
+      fname: "Mark",
+      lname: "Howard",
+      id: 4345421777
     },
     {
-      name: "Josh Bivens"
+      fname: "Josh",
+      lname: "Bivens",
+      id: 5423444710
+    },
+    {
+      fname: "Robert",
+      lname: "Öberg",
+      id: 1234523456
     }
+    
   ];
 })
