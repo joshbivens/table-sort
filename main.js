@@ -87,14 +87,14 @@ angular.module("App", [])
         
         if (method.up) {
           $scope.users.sort(function(a, b) {
-            if (a.lastName < b.lastName) return 1;
-            if (a.lastName > b.lastName) return -1;
+            if (a.lastName < b.lastName) return -1;
+            if (a.lastName > b.lastName) return 1;
             0;
           });
         } else if (!method.up) {
           $scope.users.sort(function(a, b) {
-            if (a.lastName < b.lastName) return -1;
-            if (a.lastName > b.lastName) return 1;
+            if (a.lastName < b.lastName) return 1;
+            if (a.lastName > b.lastName) return -1;
             0;
           });
         }
