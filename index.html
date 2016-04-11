@@ -11,10 +11,10 @@
     <div class="container" ng-app="App" ng-controller="SortCtrl">
       <table>
         <tr>
-          <th ng-click="sortBy('firstName')">First Name</th>
-          <th ng-click="sortBy('lastName')">Last Name</th>
-          <th ng-click="sortBy('viewCount')">Views</th>
-          <th ng-click="sortBy('id')">ID Number</th>
+          <th ng-click="sortBy('firstName')">First Name <span>{{ firstNameClicked ? '&#x25BC' : '&#x25B2' }}</span></th>
+          <th ng-click="sortBy('lastName')">Last Name <span>{{ lastNameClicked ? '&#x25BC' : '&#x25B2' }}</span></th>
+          <th ng-click="sortBy('viewCount')">Views <span>{{ viewCountClicked ? '&#x25BC' : '&#x25B2' }}</span></th>
+          <th ng-click="sortBy('id')">ID Number <span>{{ idClicked ? '&#x25BC' : '&#x25B2' }}</span></th>
         </tr>
         <tr ng-repeat="user in users">
           <td>{{ user.firstName }}</td>
