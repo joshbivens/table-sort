@@ -1,3 +1,33 @@
 .active {
-  color: crimson;
+  color: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  width: 35em;
+}
+
+table tr:first-child {
+  background: steelblue;
+  color: #ccc;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background: lavender;
+}
+
+table tr:first-child th {
+  padding: 10px 20px;
+  border: 0;
+}
+
+table td {
+  padding: 10px 25px;
+  text-align: center;
 }

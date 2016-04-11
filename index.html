@@ -11,7 +11,7 @@
     <div class="container" ng-app="App" ng-controller="SortCtrl">
       <table>
         <tr>
-          <th ng-repeat="method in methods" ng-click="sortBy(method)" ng-class="{ 'active': method.clicked }">{{ method.name }}<span>{{ method.up ? '&#x25BC' : '&#x25B2' }}</span></th>
+          <th ng-repeat="method in methods" ng-click="sortBy(method)" ng-class="{ 'active': method.clicked }">{{ method.name }} <span>{{ method.up ? '&#x25B4' : '&#x25BE' }}</span></th>
         </tr>
         <tr ng-repeat="user in users">
           <td>{{ user.firstName }}</td>
